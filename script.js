@@ -1,12 +1,7 @@
-const boton = document.getElementById("btn");
-let oscuro = false;
+const btn = document.getElementById("btnReveal");
+const extra = document.getElementById("extraText");
 
-boton.addEventListener("click", () => {
-    if (!oscuro) {
-        document.body.style.background = "#d2dae2";
-        oscuro = true;
-    } else {
-        document.body.style.background = "#f4f4f4";
-        oscuro = false;
-    }
+btn.addEventListener("click", () => {
+  extra.classList.toggle("hidden");
+  btn.textContent = extra.classList.contains("hidden") ? "Mostrar tip extra ✔" : "Ocultar tip ❌";
 });
