@@ -1,55 +1,85 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía de Tipos de Software</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-header {
-    background: #1e272e;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
+<header class="hero">
+  <h1>Guía Interactiva de Tipos de Software</h1>
+  <p>Explora todo sobre los diferentes tipos de software</p>
+</header>
 
-nav {
-    background: #485460;
-    padding: 10px;
-    text-align: center;
-}
+<nav class="menu">
+  <a href="#software">¿Qué es?</a>
+  <a href="#tipos">Tipos</a>
+  <a href="#ejemplos">Ejemplos</a>
+  <a href="#conclusion">Conclusión</a>
+</nav>
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
+<section id="software" class="section">
+  <h2>¿Qué es el software?</h2>
+  <p>
+    El software es un conjunto de programas e instrucciones que permiten que una computadora ejecute tareas específicas.
+    Es la parte **no física** del sistema informático que interactúa con el hardware para hacer que todo funcione. :contentReference[oaicite:1]{index=1}
+  </p>
+</section>
 
-nav a:hover {
-    color: #ffd32a;
-}
+<section id="tipos" class="section cards-container">
+  <h2>Tipos de Software</h2>
 
-.card {
-    background: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    animation: aparecer 1s ease;
-}
+  <div class="card">
+    <h3>Software de Sistema</h3>
+    <p>Controla y administra los recursos básicos del hardware y permite que otros programas funcionen. :contentReference[oaicite:2]{index=2}</p>
+    <ul>
+      <li>Sistemas operativos (Windows, Linux)</li>
+      <li>Controladores</li>
+      <li>Utilitarios</li>
+    </ul>
+  </div>
 
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+  <div class="card">
+    <h3>Software de Aplicación</h3>
+    <p>Programas diseñados para tareas específicas del usuario. :contentReference[oaicite:3]{index=3}</p>
+    <ul>
+      <li>Procesadores de texto</li>
+      <li>Hojas de cálculo</li>
+      <li>Videojuegos</li>
+    </ul>
+  </div>
 
-button {
-    display: block;
-    margin: 30px auto;
-    padding: 12px;
-    font-size: 16px;
-    cursor: pointer;
-}
+  <div class="card">
+    <h3>Software de Programación</h3>
+    <p>Herramientas que permiten a los desarrolladores crear otros programas. :contentReference[oaicite:4]{index=4}</p>
+    <ul>
+      <li>Compiladores</li>
+      <li>Editores de código</li>
+      <li>IDEs</li>
+    </ul>
+  </div>
+</section>
+
+<section id="ejemplos" class="section">
+  <h2>¿Por qué son importantes?</h2>
+  <p>
+    Saber los tipos de software ayuda a entender cómo funcionan las computadoras
+    y cómo usar las herramientas correctas para cada tarea.
+  </p>
+  <button id="btnReveal">Mostrar tip extra ✔</button>
+  <p id="extraText" class="hidden">¡El software puede ser libre o propietario según cómo se distribuya! :contentReference[oaicite:5]{index=5}</p>
+</section>
+
+<footer id="conclusion" class="footer">
+  <h2>Conclusión</h2>
+  <p>
+    El software es esencial para cualquier tarea digital, desde arrancar tu computadora
+    hasta jugar o estudiar. ¡Conocer sus tipos te hace mejor usuario y creador!
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
